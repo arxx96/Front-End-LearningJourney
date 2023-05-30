@@ -1,0 +1,15 @@
+.trans{
+
+    margin: 0 auto;
+    
+    height: 150px;
+    width: 150px;
+    text-align: center;
+background-color: rgb(147, 183, 28);
+transform: rotate(90deg);
+/* transform: skew(40deg); */
+/* transform: scale(2,4); */
+transition: 5s;
+
+
+}
