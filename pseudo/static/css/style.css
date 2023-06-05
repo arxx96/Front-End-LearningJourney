@@ -1,0 +1,27 @@
+.image{
+
+    background-image: url(../image/bear.png);
+    height: 500px; ;
+    width: 900px;
+    position: relative;
+    background-size: cover;
+overflow: hidden;
+/* background-repeat: no-repeat; */
+
+}
+.image::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0,0, 0.5);
+    top: 0;
+
+}
+.image:hover::after{
+/* content: ""; */
+top: 100%;
+/* color: #d9d9d9; */
+
+
+}

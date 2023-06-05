@@ -1,0 +1,46 @@
+.item{
+    background-color: blanchedalmond;
+    width: 150px;
+    height: 150px;
+    animation-duration: 10s;
+    animation-delay: 1s;
+
+    animation-name: example;
+    position: relative;
+    margin: auto;
+    border: 10px solid;
+    border-radius: 50% ;
+    /* align-items: center; */
+  
+    /* border-left: 0; */
+    border-left-color: transparent;
+   text-align: center;
+
+}
+
+
+  
+  @keyframes example {
+    0%   {
+        background-color:rgb(127, 76, 76);
+    }
+    25%  {
+        background-color:rgb(161, 161, 88);}
+    50%  {
+        background-color:rgb(111, 111, 177); }
+    75%  {
+        background-color:rgb(74, 121, 74); }
+    100% {
+        background-color:rgb(211, 88, 88); }
+
+
+        from { transform: rotate(-360deg);}
+        to{ transform: rotate(360deg);}
+  }
+  .item::after {
+    content: "arwa";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
