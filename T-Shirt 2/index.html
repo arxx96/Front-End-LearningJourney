@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- external css -->
+    <link href="./style.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google-fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Playfair Display|Montserrat|Rubik|Roboto Condensed|Merriweather|Volkhov|Open Sans">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!-- sidebar starts -->
+    <div class="sidebar" id="mySidebar">
+        <div class="row">
+            <div class="col">
+                <h5>T-Shirts Store</h5>
+            </div>
+            <div class="col-2">
+                <button class="btn-close" onclick="closeNav()"></button>
+            </div>
+        </div>
+        <hr>
+        <p>Use the template as-is or try different colors and fonts from the options below.</p>
+        
+        <div class="row">
+            <div class="col">
+                <h5>Try Other Colors</h5>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn-default" onclick="changeColor('c1')">Default</button>
+            </div>
+        </div>
+
+        <button class="btn-colors" onclick="changeColor('c1')" id="c1">
+            <div class="row gap-4">
+                <div class="col" style="font-size: small;">
+                    DEFAULT COLORS
+                </div>
+                <div class="col color-gr">
+                    <div class="color" style="background-color: rgb(0, 0, 0);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: rgb(46, 45, 45);"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+
+            </div>
+        </button>
+        <br> <br>
+
+        <div class="grid-container">
+            <button  class="btn-colors" onclick="changeColor('c2')" id="c2">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(195, 51, 195);"></div>
+                    <div class="color" style="background-color: rgb(102, 0, 128);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: rgb(46, 45, 45);"></div>
+                    <div class="color" style="background-color:gray;"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c3')" id="c3">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(229, 96, 47);"></div>
+                    <div class="color" style="background-color: rgb(221, 66, 66);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: rgb(46, 45, 45);"></div>
+                    <div class="color" style="background-color:gray;"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c4')" id="c4">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(161, 38, 133);"></div>
+                    <div class="color" style="background-color: rgb(208, 30, 56);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c5')" id="c5">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(161, 38, 133);"></div>
+                    <div class="color" style="background-color: rgb(208, 30, 56);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c6')" id="c6">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(228, 164, 53);"></div>
+                    <div class="color" style="background-color: rgb(255, 102, 0);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c7')" id="c7">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(188, 175, 53);"></div>
+                    <div class="color" style="background-color: rgb(217, 197, 15);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c8')" id="c8">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(39, 145, 37);"></div>
+                    <div class="color" style="background-color: rgb(23, 95, 34);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c9')" id="c9">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(39, 145, 37);"></div>
+                    <div class="color" style="background-color: rgb(23, 95, 34);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c10')" id="c10">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(0, 191, 255);"></div>
+                    <div class="color" style="background-color: rgb(0, 123, 255);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+            <button  class="btn-colors" onclick="changeColor('c11')" id="c11">
+                <div class="color-gr">
+                    <div class="color" style="background-color: rgb(85, 73, 255);"></div>
+                    <div class="color" style="background-color: rgb(25, 0, 138);"></div>
+                    <div class="color" style="background-color: black;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color:rgb(233, 213, 207);"></div>
+                </div>
+            </button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h5>Try Other Fonts</h5>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn-default" onclick="changeFont('Verdana')">Default</button>
+            </div>
+        </div>
+        <br>
+        <button id="1" class="btn-fonts" style="font-family: Poppins;" onclick="changeFont('Poppins','1')"><b>Poppins</b> / Poppins</button>
+        <br><br>
+        <div class="grid-container-fonts">
+            <button id="2" class="btn-fonts" style="font-family: Playfair Display;" onclick="changeFont('Playfair Display','2')"><b>A</b>a</button>
+            <button id="3" class="btn-fonts" style="font-family: Montserrat;" onclick="changeFont('Montserrat','3')"><b>A</b>a</button>
+            <button id="4" class="btn-fonts" style="font-family: Rubik;" onclick="changeFont('Rubik','4')"><b>A</b>a</button>
+            <button id="5" class="btn-fonts" style="font-family: Roboto Condensed;" onclick="changeFont('Roboto Condensed','5')"><b>A</b>a</button>
+            <button id="6" class="btn-fonts" style="font-family: Merriweather;" onclick="changeFont('Merriweather','6')"><b>A</b>a</button>
+            <button id="7" class="btn-fonts" style="font-family: Volkhov;" onclick="changeFont('Volkhov','7')"><b>A</b>a</button>
+            <button id="8" class="btn-fonts" style="font-family: Open Sans;" onclick="changeFont('Open Sans','8')"><b>A</b>a</button>
+            <button id="9" class="btn-fonts" style="font-family: Poppins;" onclick="changeFont('Poppins','9')"><b>A</b>a</button>
+        </div>
+        
+    </div>
+    
+    <!-- sidebar ends -->
+    
+    <div name="main">
+    
+        <!-- customize start -->
+    <button type="button" class="customize-btn" onclick="openNav()" id="customize">
+        <div class="row">
+            <div class="col">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="col">
+                Customize
+            </div>
+        </div>
+        
+        
+    </button>
+
+        <!-- customize ends -->
+
+    <!--nav starts-->
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" >
+
+       
+
+            <button class="navbar-toggler" type="button" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+                <li class="nav-item" >
+                  <a class="nav-link" id="item1" href="#"> <span>BUY T-SHIRT</span> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="item2" href="#"> <span>WOMEN</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " id="item3" href="#"> <span>MEN</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="item4" href="#"> <span>ABOUT</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="item5" href="#"> <span>CONTACT</span> </a>
+                </li>
+              </ul>
+            </div>
+    
+    
+            <div class="logo"> <a class="navbar-brand" href="index.html"> 
+                <img src="images/logo.png" alt="Logo">
+               
+            </a> 
+
+            </div>
+            <div class="list"></div>
+                  
+            <div class="right">
+          
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <div class="ast-search-icon">
+            
+            <!-- <i class="fa-duotone fa-magnifying-glass fa-2xs" style="--fa-primary-color: #000000; --fa-secondary-color: #000000; --fa-secondary-opacity: 1;"></i> -->
+            
+             <a class="full-screen astra-search-icon" aria-label="Search icon link" href="#"><span class="ast-icon icon-search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="-888 480 142 142" enable-background="new -888 480 142 142" xml:space="preserve">
+             <path d="M-787.4,568.7h-6.3l-2.4-2.4c7.9-8.7,12.6-20.5,12.6-33.1c0-28.4-22.9-51.3-51.3-51.3  c-28.4,0-51.3,22.9-51.3,51.3c0,28.4,22.9,51.3,51.3,51.3c12.6,0,24.4-4.7,33.1-12.6l2.4,2.4v6.3l39.4,39.4l11.8-11.8L-787.4,568.7  L-787.4,568.7z M-834.7,568.7c-19.7,0-35.5-15.8-35.5-35.5c0-19.7,15.8-35.5,35.5-35.5c19.7,0,35.5,15.8,35.5,35.5  C-799.3,553-815,568.7-834.7,568.7L-834.7,568.7z"></path>
+             </svg></span></a>
+        
+              </div>
+            </li>
+    
+            <li class="nav-item cart-icon">
+             <a href="#" class="cart-container ast-cart-desktop-position-left ast-cart-mobile-position- ast-cart-tablet-position- ">
+                
+              <div class="ast-addon-cart-wrap ast-desktop-cart-position-left ast-cart-mobile-position- ast-cart-tablet-position- ">
+              <span class="ast-woo-header-cart-info-wrap">
+              <span class="ast-woo-header-cart-total"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0.00</bdi></span></span>
+              </span>
+              <i class="astra-icon ast-icon-shopping-basket " data-cart-total="0"><span class="ast-icon icon-basket"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-basket-icon-svg" x="0px" y="0px" width="25" height="20" viewBox="826 826 140 140" enable-background="new 826 826 140 140" xml:space="preserve">
+               <path d="M955.418,887.512c2.344,0,4.343,0.829,6.002,2.486c1.657,1.659,2.486,3.659,2.486,6.002c0,2.343-0.829,4.344-2.486,6.001  c-1.659,1.658-3.658,2.487-6.002,2.487h-0.994l-7.627,43.9c-0.354,2.033-1.326,3.713-2.917,5.04  c-1.593,1.326-3.405,1.989-5.438,1.989h-84.883c-2.033,0-3.846-0.663-5.438-1.989c-1.591-1.327-2.564-3.007-2.918-5.04l-7.626-43.9  h-0.995c-2.343,
+                  0-4.344-0.829-6.001-2.487c-1.658-1.657-2.487-3.658-2.487-6.001c0-2.343,0.829-4.343,2.487-6.002  c1.658-1.658,3.659-2.486,6.001-2.486H955.418z M860.256,940.563c1.149-0.089,2.111-0.585,2.885-1.491  c0.773-0.907,1.116-1.936,1.028-3.085l-2.122-27.586c-0.088-1.15-0.585-2.111-1.492-2.885c-0.906-0.774-1.934-1.117-3.083-1.028  c-1.149,0.088-2.111,0.586-2.885,1.492s-1.116,
+                  1.934-1.028,3.083l2.122,27.587c0.088,1.105,0.542,2.034,1.359,2.785  c0.818,0.752,1.78,1.128,2.885,1.128H860.256z M887.512,936.319v-27.587c0-1.149-0.42-2.144-1.26-2.984  c-0.84-0.84-1.834-1.26-2.984-1.26s-2.144,0.42-2.984,1.26c-0.84,0.841-1.26,1.835-1.26,2.984v27.587c0,1.149,0.42,2.145,1.26,2.984  c0.84,0.84,1.835,1.26,2.984,1.26s2.144-0.42,2.984-1.26C887.092,
+                  938.464,887.512,937.469,887.512,936.319z M912.977,936.319  v-27.587c0-1.149-0.42-2.144-1.26-2.984c-0.841-0.84-1.835-1.26-2.984-1.26s-2.145,0.42-2.984,1.26  c-0.84,0.841-1.26,1.835-1.26,2.984v27.587c0,1.149,0.42,2.145,1.26,2.984s1.835,1.26,2.984,1.26s2.144-0.42,2.984-1.26  C912.557,938.464,912.977,937.469,912.977,936.319z M936.319,936.65l2.122-27.587c0.088-1.149-0.254-2.177-1.027-3.083 
+                  s-1.735-1.404-2.885-1.492c-1.15-0.089-2.178,0.254-3.084,1.028c-0.906,0.773-1.404,1.734-1.492,2.885l-2.122,27.586  c-0.088,1.149,0.254,2.178,1.027,3.085c0.774,0.906,1.736,1.402,2.885,1.491h0.332c1.105,0,2.066-0.376,2.885-1.128  C935.777,938.685,936.23,937.756,936.319,936.65z M859.66,855.946l-6.167,27.322h-8.753l6.698-29.245  c0.84-3.89,2.807-7.062,5.902-9.516c3.095-2.453,
+                  6.632-3.68,10.611-3.68h11.074c0-1.149,0.42-2.144,1.26-2.984  c0.84-0.84,1.835-1.26,2.984-1.26h25.465c1.149,0,2.144,0.42,2.984,1.26c0.84,0.84,1.26,1.834,1.26,2.984h11.074  c3.979,0,7.516,1.227,10.611,3.68c3.094,2.454,5.062,5.626,5.901,9.516l6.697,29.245h-8.753l-6.168-27.322  c-0.486-1.945-1.491-3.537-3.017-4.774c-1.525-1.238-3.282-1.857-5.272-1.857h-11.074c0,1.15-0.42,
+                  2.144-1.26,2.984  c-0.841,0.84-1.835,1.26-2.984,1.26h-25.465c-1.149,0-2.144-0.42-2.984-1.26c-0.84-0.84-1.26-1.834-1.26-2.984h-11.074  c-1.99,0-3.747,0.619-5.272,1.857C861.152,852.409,860.146,854,859.66,855.946z"></path>
+                  
+                </svg></span></i>
+               </div></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="#">LOG IN</a>
+            </li>
+        </ul>
+    
+            </div>
+    
+    
+        </nav>
+        <!--cart starts-->
+        <div class="cart">
+            <h2 class="cart-title">shopping cart</h2>
+
+            <div class="cart-content">
+               <!-- <div class="cart-box">
+                    <img src="./images/product-03-a.jpeg" alt="" srcset="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">T-Shirt</div>
+                        <div class="cart-price">$25.00</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-regular fa-circle-xmark cart-remove"></i>
+                </div>-->
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+
+            </div>
+
+            <button class="btn-buy">Buy</button>
+            <i class="fa-solid fa-xmark" id="cart-close"></i>
+        </div>
+        <!--cart ends-->
+
+    </div>
+   
+   
+    
+
+
+    <!--nav Ends-->
+
+
+<!--Hero Stars-->
+
+<div class="wrapper" name="cat-1">
+    <div class="cols cols0">
+        <span class="topline">WOMEN</span>
+        <h1 class="motto">Slik. Modern. <br> Awsome.</h1>
+        <button class="hero-btn" name="cat-2">Shop Collection</button>
+    </div>
+
+    <div class="cols cols1">
+        <div class="imgbox">
+              <img src="./images/hero.png" alt="" class="hero-image">
+        </div>
+      
+    </div>
+</div>
+
+<!--Hero Ends-->
+
+
+<!--Popular T-shirts Starts-->
+  
+   
+         
+        <div class="container fashion-section ">
+           <p class="fashion_taital"> <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">summer collectin</span></p> 
+
+           <h1 class="fashion_taital">Popular T-Shirts</h1>
+           
+              <div class="row">
+                 <div class="col-lg-3 col-sm-3">
+                    <div class="box_main">
+                      
+                       <div class="tshirt_img" style="position: relative;">
+                          
+                          <img src="./images/product-01-a.jpeg" class="img-product" onmouseover="this.src='./images/product-001-b-300x366.jpeg'" onmouseout="this.src='./images/product-01-a.jpeg'" alt="">
+                          
+
+                           <div class="card-actions" >
+                               <button class="action-btn" aria-label="Add to cart"  >
+                                    <i class="fa-solid fa-basket-shopping" ></i>
+                               </button>
+                               
+   
+                               <button class="action-btn" aria-label="Visibility" >
+                                   <i class="fa-solid fa-eye" ></i>
+                              </button>
+   
+                       </div>
+                       
+                       <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                          <h4 class="shirt_text">T-Shirt Name 1</h4>
+                       <p class="price_text">Price  <span style="color: #000000;" class="price">$30</span></p> 
+                    </div>
+                </div>
+                 </div>
+                 <div class="col-lg-3 col-sm-3">
+                    <div class="box_main">
+                       
+                       <div class="tshirt_img" >
+                          
+                          <img src="./images/product-10-a.jpeg" onmouseover="this.src='./images/product-01-d-300x366.jpeg'
+                         " onmouseout="this.src='./images/product-10-a.jpeg'" class="img-product" alt=""  class="img-product" >
+                         
+                           
+                          
+                       
+
+                               <div class="card-actions" >
+                                 <button class="action-btn" aria-label="Add to cart"  >
+                                      <i class="fa-solid fa-basket-shopping" ></i>
+                                 </button>
+                                 
+     
+                                 <button class="action-btn" aria-label="Visibility" >
+                                     <i class="fa-solid fa-eye" ></i>
+                                </button>
+     
+                               
+                                
+                               </div>
+                        
+                       
+                       <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                          <h4 class="shirt_text">T-Shirt Name 9</h4>
+                       <p class="price_text">Price  <span style="color: #000000;" class="price">$ 30</span></p> 
+                    </div>
+                </div>
+                 </div>
+              
+                <div class="col-lg-3 col-sm-3">
+                    <div class="box_main">
+
+                   <div class="tshirt_img" style="position: relative;">
+                    <img src="./images/product-06-a.jpeg" onmouseover="this.src='./images/product-01-d-300x366.jpeg'" onmouseout="this.src='./images/product-06-a.jpeg' " alt="" class="img-product" >
+                  
+
+                    <div class="card-actions" >
+                        <button class="action-btn" aria-label="Add to cart"  >
+                             <i class="fa-solid fa-basket-shopping" ></i>
+                        </button>
+                        
+
+                        <button class="action-btn" aria-label="Visibility" >
+                            <i class="fa-solid fa-eye" ></i>
+                       </button>
+
+                </div>
+                <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                          <h4 class="shirt_text">T-Shirt Name 3</h4>
+                       <p class="price_text">Price  <span style="color: #000000;" class="price">$30</span></p>
+                 </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-3">
+                 <div class="box_main">
+                    
+                    <div class="tshirt_img" style="position: relative;">
+                       
+                       <img src="./images/product-09-a.jpeg" onmouseover="this.src='./images/product-01-c-300x366.jpeg'" onmouseout="this.src='./images/product-09-a.jpeg' " alt="" class="img-product" >
+                     
+                        <div class="badge">-10%</div>
+
+                        <div class="card-actions" >
+                            <button class="action-btn" aria-label="Add to cart"  >
+                                 <i class="fa-solid fa-basket-shopping" ></i>
+                            </button>
+                            
+
+                            <button class="action-btn" aria-label="Visibility" >
+                                <i class="fa-solid fa-eye" ></i>
+                           </button>
+
+                    </div>
+                    <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                       <h4 class="shirt_text">T-Shirt Name 4</h4>
+                    <p class="price_text">Price  <span style="color: #000000;" class="price">$30</span></p> 
+                 </div>
+              </div>
+           </div>
+        </div></div>
+    
+
+<!--Popular T-shirts Ends-->
+
+<!--The Base Collection Starts-->
+<div class="pop-tshirt"> 
+
+           
+    <div class="cols smallshot "> 
+     
+        <img src="./images/Base1.jpeg" alt="" class="base-img1">
+
+        <span class="topline">MEN</span>
+        <h1 class="motto">The base collection - Ideal<br> everyday</h1>
+        
+        <button  name="cat-2">Shop Now</button>
+
+    </div>
+
+    <div class="cols bigshot"> 
+        <img src="./images/Base2.png" alt="" class="base-img2"> 
+
+    </div>
+
+</div>
+
+
+<!--The Base Collection Ends-->
+
+<!--The New Collection Starts-->
+<div class="overlay">
+    <div class="content">
+
+        <p>New Collection</p>
+        <h2> Be different in your own way! </h2> 
+          <p> Find your unique style. </p>  
+            <button class="btnn"  name="cat-2"> 
+                Shop Collection
+        </button>
+    </div>
+
+</div>
+
+<!--The New Collection Ends-->
+
+
+<!--Summer Collection Starts -->
+<div class="summer-section">
+    <div class="img-div" name="cat-1">
+        <img src="./images/female.jpg" alt="img">
+       </div>
+       <div class="info">
+        <h7 >WOMEN</h7>
+        <h3 style="  font-weight: bold; font-size: 1.5rem;">Spring Summer Collection</h3>
+        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+        <button class="btnn"  name="cat-2"> 
+            See Whole Collection
+    
+       </div>
+</div>
+
+<!--Summer Collection Ends-->
+
+<!--On Sale starts-->
+
+         
+<div class="container fashion-section ">
+    <p class="fashion_taital"> <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">summer collectin</span></p> 
+
+    <h1 class="fashion_taital">On Sale T-Shirts</h1>
+    
+       <div class="row">
+          <div class="col-lg-3 col-sm-3">
+             <div class="box_main">
+               
+                <div class="tshirt_img" style="position: relative;">
+                   
+                   <img src="./images/product-01-a.jpeg" class="img-product" onmouseover="this.src='./images/product-001-b-300x366.jpeg'" onmouseout="this.src='./images/product-01-a.jpeg' " alt="">
+                    <div class="badge">-14%</div>
+
+                    <div class="card-actions" >
+                        <button class="action-btn" aria-label="Add to cart"  >
+                             <i class="fa-solid fa-basket-shopping" ></i>
+                        </button>
+                        
+
+                        <button class="action-btn" aria-label="Visibility" >
+                            <i class="fa-solid fa-eye" ></i>
+                       </button>
+
+                </div>
+                
+                <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                   <h4 class="shirt_text">T-Shirt Name 1</h4>
+                <p class="price_text">Price  <span style="color: #000000;" class="price">$ 30</span></p> 
+             </div>
+         </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+             <div class="box_main">
+                
+                <div class="tshirt_img" >
+                   
+                   <img src="./images/product-05-a.jpeg" class="img-product" onmouseover="this.src='./images/product-001-b-300x366.jpeg'" onmouseout="this.src='./images/product-05-a.jpeg' " alt="" >
+                  
+                    
+                        <div class="badge">-14%</div>
+                
+
+                        <div class="card-actions" >
+                          <button class="action-btn" aria-label="Add to cart"  >
+                               <i class="fa-solid fa-basket-shopping" ></i>
+                          </button>
+                          
+
+                          <button class="action-btn" aria-label="Visibility" >
+                              <i class="fa-solid fa-eye" ></i>
+                         </button>
+
+                        
+                         
+                        </div>
+                 
+                
+                <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                   <h4 class="shirt_text">T-Shirt Name 9</h4>
+                <p class="price_text">Price  <span style="color: #000000;" class="price">$ 30</span></p> 
+             </div>
+         </div>
+          </div>
+       
+         <div class="col-lg-3 col-sm-3">
+             <div class="box_main">
+
+            <div class="tshirt_img" style="position: relative;">
+             <img src="./images/product-03-a.jpeg" onmouseover="this.src='./images/product-01-d-300x366.jpeg'
+             " onmouseout="this.src='./images/product-03-a.jpeg'" alt="" class="img-product">
+             <div class="badge">-20%</div>
+
+             <div class="card-actions" >
+                 <button class="action-btn" aria-label="Add to cart"  >
+                      <i class="fa-solid fa-basket-shopping" ></i>
+                 </button>
+                 
+
+                 <button class="action-btn" aria-label="Visibility" >
+                     <i class="fa-solid fa-eye" ></i>
+                </button>
+
+         </div>
+         <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                   <h4 class="shirt_text">T-Shirt Name 3</h4>
+                <p class="price_text">Price  <span style="color: #000000;" class="price">$30</span></p>
+          </div>
+           </div>
+       </div>
+       <div class="col-lg-3 col-sm-3">
+          <div class="box_main">
+             
+             <div class="tshirt_img" style="position: relative;">
+                
+                <img src="./images/product-08-a.jpeg" onmouseover="this.src='./images/product-001-b-300x366.jpeg'
+                " onmouseout="this.src='./images/product-08-a.jpeg'" alt="" class="img-product">
+              
+                 <div class="badge">-10%</div>
+
+                 <div class="card-actions" >
+                     <button class="action-btn" aria-label="Add to cart"  >
+                          <i class="fa-solid fa-basket-shopping" ></i>
+                     </button>
+                     
+
+                     <button class="action-btn" aria-label="Visibility" >
+                         <i class="fa-solid fa-eye" ></i>
+                    </button>
+
+             </div>
+             <span style="color:#000000; opacity: 0.5; text-align: center;font-size: 15px; ">men</span>
+                <h4 class="shirt_text">T-Shirt Name 4</h4>
+             <p class="price_text">Price  <span style="color: #000000;" class="price">$30</span></p> 
+          </div>
+       </div>
+    </div>
+ </div></div>
+
+
+<!--on Sale Ends-->
+
+<!--Reviews Starts -->
+<div class="reviews">
+    <h1>Reviews</h1>
+    <p> “ Very good quality T-shirts and lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua quis ipsum! ”</p>
+    <div class="rating">
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="name">
+            <h6>Jane Oliver</h6>
+        </div>
+        
+    </div>
+</div>
+<!--Reviews Ends -->
+
+<!--products section starts-->
+<div class="products">
+    <div class="pic">
+        <img src="./images/cat-men-600x600.jpeg" alt="" srcset="" >
+        <button >
+            Men 
+            <span>5 proudcts</span>
+        </button>
+    </div>
+    <div class="pic">
+        <img src="./images/cat-women-600x600.jpeg" alt="" srcset="">
+        
+        <button > 
+            Women 
+            <span>5 proudcts</span>
+        </button>
+    </div>
+</div>
+<!--products section ends-->
+    <!-- footer start -->
+    <footer name="cat-1">
+        <h2>
+            Subscribe To Get Offers In Your Inbox
+        </h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <br>
+        <div class="row">
+            <div class="col-10">
+                <input class="email" type="text" placeholder="Your email address...">
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn-sub" name="cat-2">Subscribe</button>
+            </div>
+        </div>
+        <br> <br>  <br>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2">
+                <button type="button" class="btn-link">Buy T-Shirts</button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn-link">Women</button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn-link">Men</button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn-link">About</button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn-link">Contact</button>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <br>  <br>
+        <div class="social-div">
+            <div class="col-1"><button type="button" class = "social"><i class="fa-brands fa-facebook-f" ></i></button></div>
+            <div class="col-1"><button type="button" class = "social"><i class="fa-brands fa-twitter" ></i></button></div>
+            <div class="col-1"><button type="button" class = "social"><i class="fa-brands fa-instagram" ></i></button></div>
+        </div>
+    </footer>
+       
+    <!-- footer end -->
+
+    <!-- copyright start -->
+    <div class="copyright" name="cat-2">
+        <p class="copyright-text">Copyright © 2023 T-Shirts Store | Powered by T-Shirts Store</p>
+    </div>
+    </div> </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- copyright end -->
+<script>
+  
+   
+
+</script>
+
+   
+</body>
+</html>

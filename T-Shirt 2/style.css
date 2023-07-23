@@ -1,0 +1,793 @@
+
+/*Hero style*/
+
+.wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 20%;
+    padding-left: 20%; 
+    height: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-color:rgb(233, 213, 207);
+
+    
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width:500px;
+    border-radius: 50%;
+    left:55%;
+    top:16%;
+    background-color: white;
+
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 190px;
+    width:190px;
+    border-radius: 50%;
+    left:49%;
+    top:67%;
+    background-color: white;
+}
+
+.cols{
+    width:50%;
+
+}
+
+.cols1, .cols0{
+    z-index: 5;
+}
+
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color:rgba(0,0,0,0.6);
+}
+.motto{
+   display: block; 
+   font-size: 4em;
+   font-weight: 600;
+   color:#000000;
+}
+
+.hero-btn{
+    
+    position: relative;
+    
+    outline: none;
+    border:none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color:white;
+    background-color: #000000;
+    padding:8px 14px;
+    margin:40px 5px;
+    letter-spacing:2px;
+     
+
+}
+
+.hero-btn:hover{
+    color:lightgray;
+
+}
+ .imgbox{
+   
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+} 
+ .hero-image{
+    position: relative;
+    height: 100%;
+    width: calc(180% - 80px);
+    top:-10px;
+    right: 20px;
+} 
+
+/*Popular T-shirt*/
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+} 
+
+
+.fashion-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fashion-section{
+    z-index: 0;
+}
+
+
+
+
+
+
+.fashion_taital {
+    width: 100%;
+    font-size: 40px;
+    color: #30302e;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box_main {
+    width: 100%;
+    /* background-color: #ffffff; */
+    height: auto;
+    /* padding: 0px; */
+    /* box-shadow: 0px 0 30px 10px #f0f0f0; */
+    /* margin-bottom: 5px; */
+}
+
+.shirt_text {
+    width: 100%;
+    font-size: 20px;
+    color: #30302e;
+    text-align: left;
+    font-weight:normal;
+    padding-bottom: 5px;
+}
+
+.price_text {
+    width: 100%;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    margin: 0px;
+    opacity: 0.5;
+}
+
+.tshirt_img {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+    min-height: 370px;
+    position: relative;
+    
+}
+
+
+
+
+
+
+.badge{
+   
+    background-color: white;
+    color:black;
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 40%;
+    position: absolute;
+    top:5px;
+    left:5px;
+    font-size: 10px;
+    box-shadow: 5px 5px 8px #888888;
+
+  
+    
+
+}
+.card-actions{
+  
+    display: flex;
+    height: 70px;
+ 
+    transition: .3s;
+    flex-direction: column;
+    position: absolute;
+    right:20px;
+    top:30px;
+    transform: translateY(-20px);
+    visibility: hidden;
+    
+    
+   
+}
+.action-btn{
+    display: flex;
+    width: 35px;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:rgba(33, 31, 31, 0.8);
+    box-shadow: 5px 5px 8px #888888;
+  
+    border-radius: 50%;
+    border:none;
+    margin-bottom: 5px;
+
+
+   
+}
+.action-btn:is(:hover,:focus){
+ 
+   background-color: rgba(255, 255, 255, 1);
+   color:rgba(33, 31, 31, 1);
+}
+.tshirt_img:hover .card-actions{
+    visibility: visible;
+    transform: translateY(-10px);
+}
+
+
+
+/*Footer style*/
+footer {
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+    height: 650px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color:rgb(233, 213, 207);
+
+    
+
+}
+
+.email {
+    height: 5vh;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: transparent;
+}
+.btn-sub{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-link{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: gray;
+}
+.btn-link:hover{
+    color: black;
+}
+
+.copyright {
+
+    background-color: black;
+    height: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.copyright-text {
+    color: white;
+    box-shadow:0;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+.social{
+    background-color: white;
+    border: none;
+    height: 35px;
+    width: 35px;
+}
+.social:hover{
+    background-color: transparent;
+}
+
+.social-div{
+    display: flex;
+    justify-content: center;
+}
+/*Base Collection Style*/
+.pop-tshirt{
+    display: flex;
+   
+
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-top:90px;
+    
+}
+.base-img1, .base-img2{
+    height: 200px;
+    width:200px;
+    
+  
+}
+.smallshot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right:20px;
+   
+}
+
+.bigshot img{
+    width:560px;
+    height:600px;
+}
+
+.smallshot img{
+    width:560px;
+    height:430px;
+
+
+}
+
+.smallshot h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.smallshot span{
+    font-size: 15px;
+    padding-top:5px;
+}
+
+.smallshot button{
+    position: relative;
+    
+    outline: none;
+    border:none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    color:white;
+    background-color: #000000;
+    padding:8px 14px;
+
+    letter-spacing:2px;
+     
+}
+
+/*New Collection Starts*/
+.overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    position: relative;
+
+    width: 95%;
+    height: 100vh;
+    background-image: url("./images/bg-01.jpg");
+    margin: auto;
+    margin-top: 80px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.content p:first-child{
+    font-size: 1.2rem;
+    font-weight: lighter;
+
+}
+.btnn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 5.5vh;
+    width: 10vw;
+    font-size: medium;   
+}
+
+.overlay button:hover {
+    color: rgba(220, 214, 217, 0.619);
+    
+  }
+/*Summer Collection Starts*/
+
+.summer-section{
+    display: flex;
+
+    margin:80px;
+    margin-bottom: 130px;;
+}
+
+.summer-section .img-div
+{
+    background-color: rgb(222, 213, 213);
+    
+    position: relative;
+    width: 600px;
+    height: 500px;
+    padding: 0;
+    text-align: center;
+   
+    /* box-shadow: -40px 0px 10px rgb(184, 162, 162); */
+}
+.summer-section img
+{
+  width: 500px;
+  height: 600px;
+  object-fit:contain;
+margin: 0;
+padding: 0;
+  
+
+}
+.summer-section .btnn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 7.5vh;
+    width: 15vw;
+    font-size: medium;   
+}
+
+.summer-section button:hover {
+    color: rgba(220, 214, 217, 0.619);
+    
+    
+  }
+  .summer-section .info
+  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   padding: 30px;
+   
+    color: rgb(5, 5, 5);
+    
+    /* line-height: 20px; */
+  
+   
+  }
+
+
+/*Customize feature style*/
+.customize-btn{
+    top: 25%;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    width: 10vw;
+    height: 5vh;
+    padding: 5px;
+    position: sticky;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.customize-btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+.sidebar{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: white;
+}
+.btn-close{
+    border: 1px solid black;
+    font-size: small;
+    padding: 10px;
+}
+
+.btn-default{
+    background-color: transparent;
+    color: blue;
+    text-decoration: none;
+    border: none;
+    font-size: small;
+}
+
+.btn-colors{
+    background-color: transparent;
+    padding: 6px;
+    border: 1px gray solid;
+    width: 100%;
+}
+
+.color{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.color-gr{
+    display: flex;
+    padding: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+
+.btn-fonts{
+    background-color: rgb(246, 246, 246);
+    padding: 8px;
+    border: 1px gray solid;
+    width: 100%;
+}
+
+.btn-colors:hover{
+    border: 1px blue solid;
+}
+
+
+.btn-fonts:hover{
+    border: 1px blue solid;
+    color: blue;
+}
+
+
+
+.grid-container-fonts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two equal columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+/*nav stylw*/
+a{
+    color:black;
+    text-decoration: none;
+}
+.nav-link{
+    color:black;
+    font-size: 12px;
+}
+.nav-link :hover{
+/* text-decoration: underline; */
+border-bottom: 1px solid black;
+padding-bottom: 7px;
+}
+.left{
+    margin-left: 0px;
+}
+.right li{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 0px;
+    text-decoration: none;
+    margin-top: 10px;
+   
+}
+.ast-search-icon{
+    margin-left: 320px;
+width: 15px;
+height: 15px;
+}
+.ast-icon-shopping-basket{
+width: 5px;
+height: 5px;
+}
+.ast-woo-header-cart-total{
+    text-decoration: none; 
+}
+
+/*Reviews section*/
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:70px; 
+    flex-direction: column;
+}
+.reviews h6{
+    font-weight: lighter;
+    color:gray;
+    text-align: center;
+}
+.reviews p{
+    text-align: center;
+    text-decoration: underline;
+}
+.reviews .stars i{
+    color:orange;
+}
+
+/*Products style*/
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
+   
+
+
+}
+.products img{
+
+   padding: 0 10px;
+   width:95%;
+}
+.products .pic{
+position: relative;
+}
+.products button{
+ position: absolute;
+left:5%;
+opacity: .8;
+ bottom:3%;
+width: 85%;
+
+border:none;
+box-shadow: 5px 5px 8px #888888;
+background-color: white;
+font-weight: bold;
+}
+
+.products button span{
+    display: block;
+    color:darkgray;
+    font-weight: light;
+    font-size: 10px;
+    opacity: 1;
+
+}
+
+/*Cart*/
+.cart{
+    position: fixed;
+    top:0;
+   right:-100%;
+    width:360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding:20px;
+    background-color: white;
+    box-shadow: -2px solid 4px hsl(0 40% 15% / 10%);
+    border:1px solid #888;
+    transition: 1.5s;
+    z-index: 100;
+}
+.cart.active{
+    right:0%;
+    transition: .5s;
+
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+width:100px;
+height: 100px;
+object-fit: contain;
+padding:10px;
+
+}
+.detail-box{
+    display: grid;
+    row-gap:.5rem;
+}
+.cart-product-title{
+    font-size:1rem;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid gray;
+    outline-color: black ;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color:black;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid gray;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: .5rem;
+
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border:none;
+    background-color: black;
+    color:white;
+    font-size:1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.btn-buy:hover{
+    color:gray;
+}
+
+#cart-close{
+    position: absolute;
+    top:1rem;
+    right:.8rem;
+    color:black;
+    font-size:2rem;
+    cursor: pointer;
+
+}
