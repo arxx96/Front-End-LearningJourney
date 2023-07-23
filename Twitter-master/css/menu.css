@@ -1,0 +1,39 @@
+/*AlAina Css file*/
+.sidebar-menu {
+    position: fixed;
+  }
+
+  .left_nav_section{
+    height: 100vh;
+  }
+  .profile_icon
+  {
+    bottom: 0px;
+    
+  }
+  .container-fluid{
+
+    position: fixed;
+  }
+
+  .logo{
+    margin-bottom:30px;
+  }
+  .my-3{
+    padding:10px;
+  }
+.menu-headers{
+  padding-left:5px;
+  font-size: large;
+}
+.menu-btn{
+  width: 100%;
+  margin: auto;
+  padding:5px;
+  border-radius: 20px;
+  color:white;
+  background-color: #1DA1F2;
+  border:none;
+  font-size: large;
+  
+}

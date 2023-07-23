@@ -1,0 +1,112 @@
+/*Zahra css file*/
+.trends-for-you {
+    border-radius: 15px;
+    background: #f5f8fa;
+    margin-bottom: 15px;
+  }
+
+  .trends-for-you__block {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+  }
+  
+
+  
+  .trends-for-you__heading {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171a;
+  }
+
+  /*Zahra*/
+
+  body{
+    font-family: Helvetica; 
+    }
+    
+    
+    .box {
+        background-color:#E1E8ED;
+      padding:10px 20px;
+      box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+      
+      margin-bottom:20px;
+      border-radius:15px;
+            margin-top: 10px;
+        width: 300px;
+    }
+    
+    .box h3 {
+        margin:30px 0 5px;
+      font-weight:bold;
+    }
+    
+    .box ul {
+      margin:0;
+    }
+    
+    .box ul li {
+      font-size:13px;
+    /*	border-bottom:1px solid #AAB8C2;*/
+        border-bottom: 1px solid #d1dae0;
+      padding:10px 0;
+      font-weight:600;
+    }
+    
+    .box a{
+      color:#000;
+        text-decoration: none;
+        
+    }
+    
+    .box ul li:last-child {
+      border-bottom:0;
+    }
+    
+    .box ul li i {
+      font-size:18px;
+      margin-right:20px;
+    }
+    
+    .box.categories ul li i {
+      color:#BBBBBB;	
+      position:relative;
+      top:2px;
+      width:20px;
+    }
+    
+    @media (max-width:1024px) {
+        .blog-post p,
+      .blog p,
+      #comments .media p {
+        text-align:left;
+      }
+    }
+    
+    .has-search .form-control {
+        padding-left: 2.375rem;
+       border-radius:20px; 
+      background-color:#E1E8ED; 
+      border-color:#E1E8ED;
+        width: 300px;
+        margin-top: 40px;
+    }
+    
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+
+    .box.categories{
+      padding: 10px 15px;
+      width: 375px;
+    }
+    
+    
